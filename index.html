@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nepali Alphabet Practice</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Draw Nepali Alphabet</h1>
+        <div class="tabs">
+            <button class="tab-button" data-tab="practice">Practice</button>
+            <button class="tab-button" data-tab="learn">Learn</button>
+        </div>
+        <div id="practice" class="tab-content">
+            <canvas id="canvas" width="400" height="400"></canvas>
+            <div class="controls">
+                <button id="clear">Clear</button>
+                <button id="predict">Predict</button>
+            </div>
+            <p id="result"></p>
+        </div>
+        <div id="learn" class="tab-content">
+            <h2>Learn from the video</h2>
+            <div class="steps">
+                <div class="step">
+                    <video width="320" height="240" controls>
+                        <source src="./video/nepali-alphabets.mp4" type="video/mp4">
+                      </video>
+            </div>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
