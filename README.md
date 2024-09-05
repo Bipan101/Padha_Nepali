@@ -1,10 +1,30 @@
 
 # Padha Nepali
 
-This project is an interactive app where users can draw Nepali 
-alphabet on a digital canvas , and a trained AI model identifies the character. It provides immediate feedback , helping users learn and practice Nepali script. The AI, trained on a comprehensive dataset ensures accurate character recognition.
 
-Currently in this trained AI model , it recognises only one Nepali letter i.e, "Ka" -> क.
-You guys can train the AI model for more alphabets and in this project the datasets were taken from Kaggle (https://www.kaggle.com/datasets/ashokpant/devanagari-character-dataset/data).
-Here, i used Keras model integrated with Tensoflow which is a high-level neural networks API that allows you to build, train, and deploy various types of machine learning models, 
-including Convolutional Neural Network(CNNs).
+## Overview
+This project is an interactive app designed to help users learn and practice the Nepali alphabet by drawing characters on a digital canvas. The app utilizes a trained AI model that identifies the character drawn and provides immediate feedback to the user. It’s a fun and educational way for learners to improve their understanding of the Nepali script.
+
+## Features
+Interactive Drawing Canvas: Users can draw Nepali letters using their mouse or touchscreen on a digital canvas.
+AI-powered Character Recognition: The app uses a trained AI model to recognize the drawn character and gives instant feedback.
+Immediate Feedback: Users can immediately know whether they have drawn the correct character, aiding in the learning process.
+Comprehensive Dataset: The AI model has been trained using a dataset from Kaggle, ensuring robust character recognition.
+## Current Progress
+At this stage, the AI model can recognize only one Nepali letter: "Ka" (क). However, the model can be further trained to recognize other letters of the Nepali alphabet. The dataset used for training is publicly available, and developers are encouraged to extend the model for additional alphabets.
+
+## AI Model
+This project employs a Convolutional Neural Network (CNN) built using the Keras model, integrated with TensorFlow, a powerful library for machine learning. TensorFlow's high-level neural networks API (Keras) simplifies the process of building, training, and deploying machine learning models.
+
+Model Type: Convolutional Neural Network (CNN)
+Framework: Keras with TensorFlow backend
+Dataset Source: Kaggle - Devanagari Character Dataset
+Dataset
+The dataset used to train the AI model was sourced from Kaggle, a reliable platform for data science and machine learning projects. The dataset contains images of Devanagari characters, including those from the Nepali alphabet.
+
+Dataset Link: Kaggle Devanagari Character Dataset
+
+## Future Enhancements
+Expand Character Recognition: Train the AI model to recognize additional Nepali letters beyond "Ka" (क).
+Improve UI/UX: Make the drawing canvas more user-friendly and responsive.
+Enhance Accuracy: Further fine-tune the AI model for improved character recognition accuracy.
