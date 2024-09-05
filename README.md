@@ -18,11 +18,11 @@ This project employs a Convolutional Neural Network (CNN) built using the Keras 
 
 Model Type: Convolutional Neural Network (CNN)
 Framework: Keras with TensorFlow backend
-Dataset Source: Kaggle - Devanagari Character Dataset
+Dataset Source: [Kaggle - Devanagari Character Dataset](https://www.kaggle.com/datasets/ashokpant/devanagari-character-dataset/data)
 Dataset
 The dataset used to train the AI model was sourced from Kaggle, a reliable platform for data science and machine learning projects. The dataset contains images of Devanagari characters, including those from the Nepali alphabet.
 
-Dataset Link: Kaggle Devanagari Character Dataset
+Dataset Link: [Kaggle Devanagari Character Dataset](https://www.kaggle.com/datasets/ashokpant/devanagari-character-dataset/data)
 
 ## Future Enhancements
 Expand Character Recognition: Train the AI model to recognize additional Nepali letters beyond "Ka" (क).
