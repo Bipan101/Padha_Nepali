@@ -25,6 +25,6 @@ The dataset used to train the AI model was sourced from Kaggle, a reliable platf
 Dataset Link: [Kaggle Devanagari Character Dataset](https://www.kaggle.com/datasets/ashokpant/devanagari-character-dataset/data)
 
 ## Future Enhancements
-Expand Character Recognition: Train the AI model to recognize additional Nepali letters beyond "Ka" (क).
-Improve UI/UX: Make the drawing canvas more user-friendly and responsive.
+Expand Character Recognition: Train the AI model to recognize additional Nepali letters beyond "Ka" (क). <br>
+Improve UI/UX: Make the drawing canvas more user-friendly and responsive.<br>
 Enhance Accuracy: Further fine-tune the AI model for improved character recognition accuracy.
