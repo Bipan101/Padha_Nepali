@@ -2,34 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nepali Alphabet Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali Alphabet AI - Learn Nepali Letters the Smart Way</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Draw Nepali Alphabet</h1>
-        <div class="tabs">
-            <button class="tab-button" data-tab="practice">Practice</button>
-            <button class="tab-button" data-tab="learn">Learn</button>
-        </div>
-        <div id="practice" class="tab-content">
-            <canvas id="canvas" width="400" height="400"></canvas>
-            <div class="controls">
-                <button id="clear">Clear</button>
-                <button id="predict">Predict</button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-language"></i>
+                <span>Nepali Alphabet AI</span>
             </div>
-            <p id="result"></p>
-        </div>
-        <div id="learn" class="tab-content">
-            <h2>Learn from the video</h2>
-            <div class="steps">
-                <div class="step">
-                    <video width="320" height="240" controls>
-                        <source src="./video/nepali-alphabets.mp4" type="video/mp4">
-                      </video>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#practice" class="nav-link">Practice</a>
             </div>
         </div>
-    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Learn Nepali Letters 
+                    <span class="gradient-text">the Smart Way</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Master the beautiful Nepali script with AI-powered recognition, 
+                    real-time feedback, and interactive drawing practice.
+                </p>
+                <button class="cta-button" onclick="scrollToSection('practice')">
+                    <i class="fas fa-pencil-alt"></i>
+                    Start Drawing
+                </button>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="nepali-char">क</div>
+                    <div class="nepali-char">ख</div>
+                    <div class="nepali-char">ग</div>
+                    <div class="nepali-char">घ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Nepali Alphabet AI?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Recognition</h3>
+                    <p>Advanced machine learning algorithms analyze your handwriting and provide accurate character recognition.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Real-Time Feedback</h3>
+                    <p>Get instant feedback on your writing with detailed suggestions for improvement and stroke guidance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Touchscreen Friendly</h3>
+                    <p>Optimized for tablets and touch devices, making learning natural and intuitive on any screen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Section -->
+    <section id="practice" class="practice">
+        <div class="container">
+            <h2 class="section-title">Practice Drawing</h2>
+            <div class="practice-container">
+                <div class="canvas-section">
+                    <div class="canvas-wrapper">
+                        <canvas id="canvas" width="400" height="400"></canvas>
+                        <div class="canvas-overlay" id="canvasOverlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-pencil-alt"></i>
+                                <p>Start drawing a Nepali character</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <button id="clear" class="btn btn-secondary">
+                            <i class="fas fa-eraser"></i>
+                            Clear
+                        </button>
+                        <button id="predict" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="feedback-section">
+                    <div class="result-card">
+                        <h3>AI Feedback</h3>
+                        <div id="result" class="result-content">
+                            <div class="empty-state">
+                                <i class="fas fa-robot"></i>
+                                <p>Draw a character and click Submit to get AI feedback!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learning-card">
+                        <h3>Learning Resources</h3>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="./video/nepali-alphabets.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-language"></i>
+                    <span>Nepali Alphabet AI</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/Bipan101/Padha_Nepali" target="_blank" class="footer-link">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nepali Alphabet AI.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="./script/script.js"></script>
 </body>
 </html>
